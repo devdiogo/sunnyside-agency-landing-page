@@ -38,8 +38,8 @@ const IndexPage = () => {
             src="./assets/icon-hamburger.svg"
             alt="Menu"
           />
+          <span className={showHamburger ? "menu-arrow-active" : ""} />
           <ul className={showHamburger ? "menu-active" : ""}>
-            <div />
             <li>
               <Link href="/">
                 <a>About</a>

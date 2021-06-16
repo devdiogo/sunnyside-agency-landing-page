@@ -11,6 +11,17 @@ export const NavStyle = styled.div`
     right: 20px;
     cursor: pointer;
   }
+  span {
+    display: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-style: solid;
+    border-width: 0 0 30px 30px;
+    border-color: transparent transparent #fff transparent;
+    top: 75px;
+    right: 5.7%;
+  }
   ul {
     display: none;
     background: #fff;
@@ -19,20 +30,8 @@ export const NavStyle = styled.div`
     padding: 8px 0 56px 0;
     position: absolute;
     width: 89%;
-    > div {
-      width: 0;
-      height: 0;
-      position: absolute;
-      border-style: solid;
-      border-width: 0 0 30px 30px;
-      border-color: transparent transparent #fff transparent;
-      top: -29px;
-      right: 0;
-    }
     li {
-      &:not(:first-child) {
-        padding-top: 32px;
-      }
+      padding-top: 32px;
       &:last-child {
         padding-top: 47px;
       }
@@ -75,8 +74,8 @@ export const NavStyle = styled.div`
       background: none;
       position: static;
       width: auto;
-      div {
-        display: none;
+      span {
+        display: block;
       }
       li {
         display: inline;

@@ -1,5 +1,6 @@
 import type { AppProps } from "next/app"
 import { createGlobalStyle } from "styled-components"
+import { layout_size } from "../styles/style-guide"
 
 const GlobalStyle = createGlobalStyle`
   html, body, p, ol, ul, li, hr, h1, h2, h3, h4, h5, h6 {
@@ -40,6 +41,12 @@ const GlobalStyle = createGlobalStyle`
 
   .menu-active {
     display: block !important;
+  }
+
+  @media (max-width: ${layout_size.mobile}) {
+    .menu-arrow-active {
+      display: block !important;
+    }
   }
 `
 
