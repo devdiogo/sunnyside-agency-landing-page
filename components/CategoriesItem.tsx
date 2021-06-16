@@ -4,7 +4,7 @@ import { colors, layout_size } from "../styles/style-guide"
 type CategoriesItemStyleProps = {
   image: string
   imageAlt: string
-  color?: string
+  textColor?: string
 }
 
 const CategoriesItemStyle = styled.div<CategoriesItemStyleProps>`
@@ -61,9 +61,9 @@ type CategoriesItemProps = CategoriesItemStyleProps & {
   children?: React.ReactNode
 }
 
-export default function CategoriesItem({ image, imageAlt, color, children }: CategoriesItemProps) {
+export default function CategoriesItem({ image, imageAlt, textColor, children }: CategoriesItemProps) {
   return (
-    <CategoriesItemStyle image={image} imageAlt={imageAlt} color={color}>
+    <CategoriesItemStyle image={image} imageAlt={imageAlt} textColor={textColor}>
       {children}
     </CategoriesItemStyle>
   )

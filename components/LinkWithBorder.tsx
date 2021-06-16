@@ -2,7 +2,17 @@ import Link from "next/link"
 import styled from "styled-components"
 import { colors, layout_size } from "../styles/style-guide"
 
-const LinkWithBorderStyle = styled.a`
+type LinkProps = {
+  href: string
+  text: string
+  borderColor: string
+}
+
+type LinkStyleProps = {
+  borderColor: string
+}
+
+const LinkWithBorderStyle = styled.a<LinkStyleProps>`
   font-family: "Fraunces";
   font-weight: 900;
   font-size: 15px;
@@ -28,7 +38,7 @@ const LinkWithBorderStyle = styled.a`
       display: block;
       width: 135px;
       height: 10px;
-      background: ${(props) => props.color};
+      background: ${(props) => props.borderColor};
       opacity: 25%;
       border-radius: 28px;
       position: absolute;
@@ -42,16 +52,10 @@ const LinkWithBorderStyle = styled.a`
   }
 `
 
-type Link = {
-  href: string
-  text: string
-  borderColor: string
-}
-
-export default function LinkWithBorder({ href, text, borderColor }: Link) {
+export default function LinkWithBorder({ href, text, borderColor }: LinkProps) {
   return (
     <Link href={href}>
-      <LinkWithBorderStyle color={borderColor}>
+      <LinkWithBorderStyle borderColor={borderColor}>
         <span>{text}</span>
         <span></span>
       </LinkWithBorderStyle>

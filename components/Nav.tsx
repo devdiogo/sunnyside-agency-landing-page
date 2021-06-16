@@ -19,7 +19,7 @@ export const NavStyle = styled.div`
     padding: 8px 0 56px 0;
     position: absolute;
     width: 89%;
-    span {
+    > div {
       width: 0;
       height: 0;
       position: absolute;
@@ -75,7 +75,7 @@ export const NavStyle = styled.div`
       background: none;
       position: static;
       width: auto;
-      span {
+      div {
         display: none;
       }
       li {

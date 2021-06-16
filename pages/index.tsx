@@ -39,7 +39,7 @@ const IndexPage = () => {
             alt="Menu"
           />
           <ul className={showHamburger ? "menu-active" : ""}>
-            <span />
+            <div />
             <li>
               <Link href="/">
                 <a>About</a>
@@ -101,7 +101,7 @@ const IndexPage = () => {
             </p>
           </div>
         </CategoriesItem>
-        <CategoriesItem image="image-photography.jpg" imageAlt="Photography" color={colors.dark_blue}>
+        <CategoriesItem image="image-photography.jpg" imageAlt="Photography" textColor={colors.dark_blue}>
           <div>
             <h3>Photography</h3>
             <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
