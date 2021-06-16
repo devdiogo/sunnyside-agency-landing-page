@@ -13,7 +13,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://sunnyside-agency-landing-page-a1y3r1wm0-devdiogo.vercel.app/](https://sunnyside-agency-landing-page-a1y3r1wm0-devdiogo.vercel.app/)
+- Live Site URL: [https://sunnyside-agency-landing-page-bice.vercel.app/](https://sunnyside-agency-landing-page-bice.vercel.app/)
 
 ### Built with
 
